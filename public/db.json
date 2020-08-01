@@ -1,0 +1,53 @@
+{
+	"pizza": {
+		"ollPizza": [
+			{
+				"id": "1",
+				"name": "Чизбургер-пицца",
+				"price": 395,
+				"categories": [0, 1, 3],
+				"img": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg",
+				"type": {
+					"size": [26, 30, 40],
+					"basis": ["тонкое", "традиционное"]
+				}
+			},
+			{
+				"id": "2",
+				"name": "Маргарита",
+				"price": 200,
+				"img": "https://cdn.dodostatic.net/static/Img/Products/Pizza/ru-RU/9dbd8915-498a-4d5c-a3a9-6f2190df2e16.jpg",
+				"categories": [0, 2],
+				"type": {
+					"size": [26, 30, 40],
+					"basis": ["тонкое"]
+				}
+			},
+			{
+				"id": "3",
+				"name": "Пеперони",
+				"price": 400,
+				"img": "https://cdn.dodostatic.net/static/Img/Products/Pizza/ru-RU/523c10a1-464d-41ad-9d28-f414a009ae22.jpg",
+				"categories": [0, 3, 4],
+				"type": {
+					"size": [30, 40],
+					"basis": ["тонкое", "традиционное"]
+				}
+			}
+		],
+		"categories": [
+			{"name": "Все", "id": 0},
+			{"name": "Мясные", "id": 1},
+			{"name": "Вегетарианские", "id": 2},
+			{"name": "Гриль", "id": 3},
+			{"name": "Острые", "id": 4},
+			{"name": "Закрытые", "id": 5}
+		],
+		"sortItems": ["популярности", "цене", "алфавиту"]
+	},
+	"cart": {
+		"count": 2,
+		"pizzaOrder": [],
+		"totalPrice": 500
+	}
+}
