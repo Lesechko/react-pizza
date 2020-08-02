@@ -1,14 +1,7 @@
 import React, {useEffect} from 'react';
-import axios from 'axios';
 import {useDispatch} from 'react-redux';
 
-import {setPizzas} from './redux/actions/pizzas';
-import {
-	setCategories,
-	setSortItems,
-	setActiveCategory,
-	setSortBy,
-} from './redux/actions/filters';
+import {getInitialPizzaItem} from './redux/actions/pizzas';
 import './scss/app.scss';
 import Header from './components/Header';
 import Content from './components/Content';
@@ -17,14 +10,9 @@ const App = () => {
 	const dispatch = useDispatch();
 
 	useEffect(() => {
-		axios.get('http://localhost:3004/pizza').then(({data}) => {
-			dispatch(setPizzas(data.ollPizza));
-			dispatch(setSortItems(data.sortItems));
-			dispatch(setCategories(data.categories));
-			dispatch(setActiveCategory());
-			dispatch(setSortBy());
-		});
-	}, []);
+		dispatch(getInitialPizzaItem());
+	});
+
 	return (
 		<div className="wrapper">
 			<Header />
