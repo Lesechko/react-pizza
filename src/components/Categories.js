@@ -1,5 +1,6 @@
 import React, {memo} from 'react';
 import {useDispatch} from 'react-redux';
+import PropTypes from 'prop-types';
 
 import {setActiveCategory} from '../redux/actions/filters';
 
@@ -24,5 +25,15 @@ const Categories = memo(({categories, activeCategory}) => {
 		</div>
 	);
 });
+
+Categories.propTypes = {
+	categories: PropTypes.arrayOf(PropTypes.object),
+	activeCategory: PropTypes.object,
+};
+
+Categories.defaultProps = {
+	categories: [{name: 'Is Apsent', id: 0}],
+	activeCategory: {name: 'Все', id: 0},
+};
 
 export default Categories;

@@ -10,7 +10,8 @@
 				"type": {
 					"size": [26, 30, 40],
 					"basis": ["тонкое", "традиционное"]
-				}
+				},
+				"popularityIdx": 1
 			},
 			{
 				"id": "2",
@@ -21,7 +22,8 @@
 				"type": {
 					"size": [26, 30, 40],
 					"basis": ["тонкое"]
-				}
+				},
+				"popularityIdx": 5
 			},
 			{
 				"id": "3",
@@ -32,7 +34,44 @@
 				"type": {
 					"size": [30, 40],
 					"basis": ["тонкое", "традиционное"]
-				}
+				},
+				"popularityIdx": 6
+			},
+			{
+				"id": "4",
+				"name": "Четыре сыра ",
+				"price": 445,
+				"categories": [0, 2],
+				"img": "https://cdn.dodostatic.net/static/Img/Products/Pizza/ru-RU/baf084f4-fc94-443c-a646-fdeff9f301a6.jpg",
+				"type": {
+					"size": [26, 30, 40],
+					"basis": ["тонкое", "традиционное"]
+				},
+				"popularityIdx": 7
+			},
+			{
+				"id": "5",
+				"name": "Мясная",
+				"price": 445,
+				"categories": [0, 1, 3],
+				"img": "https://cdn.dodostatic.net/static/Img/Products/Pizza/ru-RU/b61cca95-caa6-4952-94b2-6896098b4f53.jpg",
+				"type": {
+					"size": [26, 30, 40],
+					"basis": ["тонкое", "традиционное"]
+				},
+				"popularityIdx": 2
+			},
+			{
+				"id": "6",
+				"name": "Итальянская",
+				"price": 395,
+				"categories": [0, 1, 4],
+				"img": "https://cdn.dodostatic.net/static/Img/Products/Pizza/ru-RU/ac08a6eb-a136-4e76-83bc-bdd5253ff123.jpg",
+				"type": {
+					"size": [26, 30, 40],
+					"basis": ["тонкое", "традиционное"]
+				},
+				"popularityIdx": 4
 			}
 		],
 		"categories": [
@@ -46,8 +85,8 @@
 		"sortItems": ["популярности", "цене", "алфавиту"]
 	},
 	"cart": {
-		"count": 2,
+		"count": 0,
 		"pizzaOrder": [],
-		"totalPrice": 500
+		"totalPrice": 0
 	}
 }

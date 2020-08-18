@@ -1,12 +1,12 @@
-import React, {useState} from 'react';
+import React from 'react';
 
-function Button() {
-	const [count, setCount] = useState(0);
-
+function Button({onBntClick, btnCount}) {
 	return (
 		<div
 			className="button button--outline button--add"
-			onClick={() => setCount(count + 1)}
+			onClick={() => {
+				onBntClick();
+			}}
 		>
 			<svg
 				width="12"
@@ -21,7 +21,7 @@ function Button() {
 				/>
 			</svg>
 			<span>Добавить</span>
-			<i>{count}</i>
+			<i>{btnCount}</i>
 		</div>
 	);
 }
