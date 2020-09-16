@@ -1,11 +1,14 @@
 import React, {useState} from 'react';
 
-function PizzaModify({type: {size, basis}}) {
+function PizzaModify({
+	type: {size, basis},
+	activeSize,
+	activeBasis,
+	setActiveSize,
+	setActiveBasis,
+}) {
 	const defaultSize = [26, 30, 40];
 	const defaultBasic = ['тонкое', 'традиционное'];
-
-	const [activeSize, setActiveSize] = useState(size[0]);
-	const [activeBasis, setActiveBasis] = useState(basis[0]);
 
 	const onSizeChange = (s) => {
 		if (size.includes(s)) {

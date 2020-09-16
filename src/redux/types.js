@@ -5,3 +5,5 @@ export const SET_SORT_ITEMS = 'SET_SORT_ITEMS';
 export const SET_ACTIVE_CATEGORY = 'SET_ACTIVE_CATEGORY';
 export const SET_LOADING = 'SET_LOADING';
 export const ADD_PIZZA = 'ADD_PIZZA';
+export const ADD_CLICK = 'ADD_CLICK';
+export const SUB_CLICK = 'SUB_CLICK';
